@@ -866,15 +866,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 2,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 11,
-                                    "denominacao": "FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -903,8 +903,8 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-10-18",
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-10-19",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1218,7 +1218,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":2,\"version\":null,\"codigo\":11,\"denominacao\":\"FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL\"}",
+                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
                 "valueCompare": null,
                 "childs": []
             },
@@ -1536,15 +1536,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 2,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 11,
-                                    "denominacao": "FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1573,8 +1573,8 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-10-18",
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-10-19",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1602,8 +1602,8 @@
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2022-01-31",
-                "valueCompare": "2022-10-18",
+                "value": "2022-01-30",
+                "valueCompare": "2022-10-19",
                 "childs": []
             }
         },
