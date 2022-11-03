@@ -904,7 +904,7 @@
                                     "filterCurrentYear": false
                                 },
                                 "value": "2022-01-14",
-                                "valueCompare": "2022-11-21",
+                                "valueCompare": "2022-11-22",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1574,7 +1574,7 @@
                                     "filterCurrentYear": false
                                 },
                                 "value": "2022-01-14",
-                                "valueCompare": "2022-11-21",
+                                "valueCompare": "2022-11-22",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1603,7 +1603,7 @@
                     "filterCurrentYear": false
                 },
                 "value": "2022-01-14",
-                "valueCompare": "2022-11-21",
+                "valueCompare": "2022-11-22",
                 "childs": []
             }
         },
@@ -1752,7 +1752,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 6,
+        "size": 10,
         "count": 25,
         "paginate": true,
         "countValues": [
