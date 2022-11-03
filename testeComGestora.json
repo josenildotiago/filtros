@@ -401,18 +401,7 @@
                         },
                         "defaultValue": null,
                         "defaultValueKey": null,
-                        "defaultValueCompare": null,
-                        "value": {
-                            "id": 3,
-                            "version": null,
-                            "codigo": 10,
-                            "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
-                            "inscricaoEstadual": null,
-                            "telefone": null,
-                            "email": null,
-                            "homePage": null,
-                            "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                        }
+                        "defaultValueCompare": null
                     },
                     {
                         "searchType": "ADVANCED",
@@ -440,8 +429,8 @@
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
                         "defaultValueCompare": "2022-11-03",
-                        "value": "2022-01-14",
-                        "valueCompare": "2022-11-22"
+                        "value": "2022-01-01",
+                        "valueCompare": "2022-11-03"
                     }
                 ]
             }
@@ -454,13 +443,12 @@
                     "components": [
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "property": "",
+                                "alias": null,
                                 "label": "Totalizar por",
-                                "placeholder": "Selecione o Totalizador",
-                                "searchDefault": true,
+                                "property": "",
+                                "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -468,7 +456,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "disableSearch": true,
                                     "defaultValue": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
@@ -501,16 +488,15 @@
                                     "hideCondition": true,
                                     "changeAction": "reload"
                                 },
-                                "defaultValue": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null,
                                 "value": {
                                     "id": 1,
                                     "version": null,
                                     "nome": "Natureza da receita",
                                     "url": "{alias}/receita/avancado/categoria",
                                     "selected": true
-                                }
+                                },
+                                "valueCompare": null,
+                                "searchDefault": true
                             },
                             "childs": []
                         }
@@ -522,6 +508,7 @@
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "Totalizar por",
+                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -562,6 +549,7 @@
                     "changeAction": "reload"
                 },
                 "value": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
+                "valueCompare": null,
                 "childs": []
             },
             "Filtrar porunidadeGestora": {
@@ -571,13 +559,12 @@
                     "components": [
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "property": "unidadeGestora",
+                                "alias": null,
                                 "label": "<span>Unidade gestora</span>",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "unidadeGestora",
+                                "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -585,7 +572,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -879,32 +865,30 @@
                                     ],
                                     "hideCondition": true
                                 },
-                                "defaultValue": null,
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 3,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                                }
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                },
+                                "valueCompare": null,
+                                "searchDefault": true
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "PERIODO",
-                                "property": "listMovimentos.dataMovimento",
+                                "alias": null,
                                 "label": "Período",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "listMovimentos.dataMovimento",
+                                "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -912,7 +896,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "defaultValueCompare": "2022-11-03",
                                     "nestedName": "group_by_movimentos",
@@ -920,11 +903,9 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "defaultValue": "2022-01-01",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": "2022-11-03",
                                 "value": "2022-01-14",
-                                "valueCompare": "2022-11-22"
+                                "valueCompare": "2022-11-22",
+                                "searchDefault": true
                             },
                             "childs": []
                         }
@@ -936,6 +917,7 @@
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "<span>Unidade gestora</span>",
+                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -1236,7 +1218,8 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
+                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
+                "valueCompare": null,
                 "childs": []
             },
             "Filtrar porlistMovimentos.dataMovimento": {
@@ -1246,13 +1229,12 @@
                     "components": [
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "property": "unidadeGestora",
+                                "alias": null,
                                 "label": "<span>Unidade gestora</span>",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "unidadeGestora",
+                                "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -1260,7 +1242,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -1554,32 +1535,30 @@
                                     ],
                                     "hideCondition": true
                                 },
-                                "defaultValue": null,
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 3,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                                }
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                },
+                                "valueCompare": null,
+                                "searchDefault": true
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "PERIODO",
-                                "property": "listMovimentos.dataMovimento",
+                                "alias": null,
                                 "label": "Período",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "listMovimentos.dataMovimento",
+                                "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -1587,7 +1566,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "defaultValueCompare": "2022-11-03",
                                     "nestedName": "group_by_movimentos",
@@ -1595,11 +1573,9 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "defaultValue": "2022-01-01",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": "2022-11-03",
                                 "value": "2022-01-14",
-                                "valueCompare": "2022-11-22"
+                                "valueCompare": "2022-11-22",
+                                "searchDefault": true
                             },
                             "childs": []
                         }
@@ -1611,6 +1587,7 @@
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
                 "label": "Período",
+                "alias": null,
                 "condition": {
                     "value": "ENTRE",
                     "desc": "Entre",
@@ -1775,7 +1752,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 10,
+        "size": 6,
         "count": 25,
         "paginate": true,
         "countValues": [
