@@ -866,15 +866,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 1,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 20,
-                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1218,7 +1218,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
+                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
                 "valueCompare": null,
                 "childs": []
             },
@@ -1536,15 +1536,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 1,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 20,
-                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1752,7 +1752,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 6,
+        "size": 10,
         "count": 25,
         "paginate": true,
         "countValues": [
