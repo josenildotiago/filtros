@@ -1,10 +1,10 @@
 {
     "actions": null,
     "detailsRows": null,
-    "title": "<span>Empenhos</span>",
-    "subtitle": null,
-    "idTable": "compublicaportalempenhodiariafornecedoravancadoPortalDespesaEmpenhoDiariaFornecedorAvancadoTableService",
-    "actionHeadClasses": null,
+    "title": "<span>Despesa</span>",
+    "subtitle": "<span>Empenhos</span>",
+    "idTable": "compublicaportalempenhoavancadoPortalDespesaEmpenhoAvancadoTableService",
+    "actionHeadClasses": "null hidden-xs hidden-sm",
     "forceShowActions": true,
     "treeTable": false,
     "expandTable": false,
@@ -341,8 +341,8 @@
                     {
                         "searchType": "ADVANCED",
                         "searchRestrictionType": "PERIODO",
-                        "property": "listMovimentos.dataMovimento",
-                        "label": "Período",
+                        "property": "empenho.emissao",
+                        "label": "Período emissão",
                         "placeholder": "",
                         "searchDefault": true,
                         "allowAddChildren": true,
@@ -355,17 +355,16 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "defaultValueCompare": "'.$dataAtual.'",
-                            "nestedName": "group_by_movimentos",
+                            "defaultValueCompare": "2022-11-08",
                             "defaultValue": "2022-01-01",
                             "hideCondition": true,
                             "filterCurrentYear": false
                         },
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
-                        "defaultValueCompare": "'.$dataAtual.'",
+                        "defaultValueCompare": "2022-11-08",
                         "value": "2022-01-01",
-                        "valueCompare": "'.$dataAtual.'"
+                        "valueCompare": "2022-11-08"
                     },
                     {
                         "searchType": "ADVANCED",
@@ -708,15 +707,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": '.$id.',
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": '.$codigo.',
-                                    "denominacao": "'.$denominacao.'",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para '.$deominacao.'"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -726,8 +725,8 @@
                         {
                             "search": {
                                 "alias": null,
-                                "label": "Período",
-                                "property": "listMovimentos.dataMovimento",
+                                "label": "Período emissão",
+                                "property": "empenho.emissao",
                                 "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
                                 "searchType": "ADVANCED",
@@ -739,14 +738,13 @@
                                     "icon": "epublica-icon-exchange-alt"
                                 },
                                 "params": {
-                                    "defaultValueCompare": "'.$dataAtual.'",
-                                    "nestedName": "group_by_movimentos",
+                                    "defaultValueCompare": "2022-11-08",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "'.$dataInicial.'",
-                                "valueCompare": "'.$dataFinal.'",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-01",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1086,11 +1084,11 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":'.$id.',\"version\":null,\"codigo\":'.$codigo.',\"denominacao\":\"'.$denominacao.'\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para '.$denominacao.'\"}",
+                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
                 "valueCompare": null,
                 "childs": []
             },
-            "Filtrar porlistMovimentos.dataMovimento": {
+            "Filtrar porempenho.emissao": {
                 "separator": {
                     "name": "Filtrar por",
                     "hide": true,
@@ -1404,15 +1402,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": '.$id.',
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": '.$codigo.',
-                                    "denominacao": "'.$denominacao.'",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para '.$deominacao.'"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1422,8 +1420,8 @@
                         {
                             "search": {
                                 "alias": null,
-                                "label": "Período",
-                                "property": "listMovimentos.dataMovimento",
+                                "label": "Período emissão",
+                                "property": "empenho.emissao",
                                 "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
                                 "searchType": "ADVANCED",
@@ -1435,14 +1433,13 @@
                                     "icon": "epublica-icon-exchange-alt"
                                 },
                                 "params": {
-                                    "defaultValueCompare": "'.$dataAtual.'",
-                                    "nestedName": "group_by_movimentos",
+                                    "defaultValueCompare": "2022-11-08",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "'.$dataInicial.'",
-                                "valueCompare": "'.$dataFinal.'",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-01",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1475,12 +1472,12 @@
                         }
                     ]
                 },
-                "property": "listMovimentos.dataMovimento",
-                "key": "listMovimentos.dataMovimento",
+                "property": "empenho.emissao",
+                "key": "empenho.emissao",
                 "searchType": "ADVANCED",
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
-                "label": "Período",
+                "label": "Período emissão",
                 "alias": null,
                 "condition": {
                     "value": "ENTRE",
@@ -1490,14 +1487,13 @@
                     "icon": "epublica-icon-exchange-alt"
                 },
                 "params": {
-                    "defaultValueCompare": "'.$dataAtual.'",
-                    "nestedName": "group_by_movimentos",
+                    "defaultValueCompare": "2022-11-08",
                     "defaultValue": "2022-01-01",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "'.$dataInicial.'",
-                "valueCompare": "'.$dataFinal.'",
+                "value": "2022-01-31",
+                "valueCompare": "2022-11-01",
                 "childs": []
             }
         },
@@ -1646,7 +1642,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 0,
+        "size": 970,
         "count": 25,
         "paginate": true,
         "countValues": [
