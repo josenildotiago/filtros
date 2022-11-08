@@ -20,7 +20,7 @@
     "header": null,
     "pagination": {
         "page": 1,
-        "size": 0,
+        "size": 11,
         "count": 25,
         "paginate": true,
         "countValues": [
@@ -387,7 +387,7 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "defaultValueCompare": "2022-11-08",
+                            "defaultValueCompare": "'.$dataAtual.'",
                             "nestedName": "group_by_movimentos",
                             "defaultValue": "2022-01-01",
                             "hideCondition": true,
@@ -395,9 +395,9 @@
                         },
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
-                        "defaultValueCompare": "2022-11-08",
+                        "defaultValueCompare": "'.$dataAtual.'",
                         "value": "2022-01-01",
-                        "valueCompare": "2022-11-08"
+                        "valueCompare": "'.$dataAtual.'"
                     },
                     {
                         "searchType": "ADVANCED",
@@ -740,15 +740,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 3,
+                                    "id": '.$id.',
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": '.$codigo.',
+                                    "denominacao": "'.$denominacao.'",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
+                                    "denominacaoPara": "para '.$denominacao.'"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -771,14 +771,14 @@
                                     "icon": "epublica-icon-exchange-alt"
                                 },
                                 "params": {
-                                    "defaultValueCompare": "2022-11-08",
+                                    "defaultValueCompare": "'.$dataAtual.'",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-30",
-                                "valueCompare": "2022-11-02",
+                                "value": "'.$dataInicial.'",
+                                "valueCompare": "'.$dataFinal.'",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1118,7 +1118,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
+                "value": "{\"id\":'.$id.',\"version\":null,\"codigo\":'.$codigo.',\"denominacao\":\"'.$denominacao.'\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para '.$denominacao.'\"}",
                 "valueCompare": null,
                 "childs": []
             },
@@ -1436,15 +1436,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 3,
+                                    "id": '.$id.',
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": '.$codigo.',
+                                    "denominacao": "'.$denominacao.'",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
+                                    "denominacaoPara": "para '.$denominacao.'"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1467,14 +1467,14 @@
                                     "icon": "epublica-icon-exchange-alt"
                                 },
                                 "params": {
-                                    "defaultValueCompare": "2022-11-08",
+                                    "defaultValueCompare": "'.$dataAtual.'",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-30",
-                                "valueCompare": "2022-11-02",
+                                "value": "'.$dataInicial.'",
+                                "valueCompare": "'.$dataFinal.'",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1522,14 +1522,14 @@
                     "icon": "epublica-icon-exchange-alt"
                 },
                 "params": {
-                    "defaultValueCompare": "2022-11-08",
+                    "defaultValueCompare": "'.$dataAtual.'",
                     "nestedName": "group_by_movimentos",
                     "defaultValue": "2022-01-01",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2022-01-30",
-                "valueCompare": "2022-11-02",
+                "value": "'.$dataInicial.'",
+                "valueCompare": "'.$dataFinal.'",
                 "childs": []
             }
         },
