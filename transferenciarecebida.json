@@ -99,7 +99,7 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "defaultValueCompare": "2022-11-08",
+                            "defaultValueCompare": "'.$dataAtual.'",
                             "nestedName": "group_by_movimentos",
                             "defaultValue": "2022-01-01",
                             "hideCondition": true,
@@ -107,9 +107,9 @@
                         },
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
-                        "defaultValueCompare": "2022-11-08",
-                        "value": "2022-01-31",
-                        "valueCompare": "2022-11-02"
+                        "defaultValueCompare": "'.$dataAtual.'",
+                        "value": "2022-01-01",
+                        "valueCompare": "'.$dataAtual.'"
                     }
                 ]
             }
@@ -150,13 +150,12 @@
                         },
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "PERIODO",
-                                "property": "listMovimentos.dataMovimento",
+                                "alias": null,
                                 "label": "Período",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "listMovimentos.dataMovimento",
+                                "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -164,19 +163,16 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
-                                "classEnum": null,
                                 "params": {
-                                    "defaultValueCompare": "2022-11-08",
+                                    "defaultValueCompare": "'.$dataAtual.'",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "defaultValue": "2022-01-01",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": "2022-11-08",
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-11-02"
+                                "value": "'.$dataInicial.'",
+                                "valueCompare": "'.$dataFinal.'",
+                                "searchDefault": true
                             },
                             "childs": []
                         }
@@ -188,6 +184,7 @@
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
                 "label": "Período",
+                "alias": null,
                 "condition": {
                     "value": "ENTRE",
                     "desc": "Entre",
@@ -196,14 +193,14 @@
                     "icon": "epublica-icon-exchange-alt"
                 },
                 "params": {
-                    "defaultValueCompare": "2022-11-08",
+                    "defaultValueCompare": "'.$dataAtual.'",
                     "nestedName": "group_by_movimentos",
                     "defaultValue": "2022-01-01",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2022-01-31",
-                "valueCompare": "2022-11-02",
+                "value": "'.$dataInicial.'",
+                "valueCompare": "'.$dataFinal.'",
                 "childs": []
             }
         },
