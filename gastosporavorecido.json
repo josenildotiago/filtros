@@ -707,15 +707,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 2,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 11,
-                                    "denominacao": "FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL"
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -743,8 +743,8 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2021-11-29",
-                                "valueCompare": "2022-11-03",
+                                "value": "2021-11-30",
+                                "valueCompare": "2022-11-02",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1084,7 +1084,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":2,\"version\":null,\"codigo\":11,\"denominacao\":\"FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL\"}",
+                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
                 "valueCompare": null,
                 "childs": []
             },
@@ -1402,15 +1402,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 2,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 11,
-                                    "denominacao": "FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL"
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1438,8 +1438,8 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2021-11-29",
-                                "valueCompare": "2022-11-03",
+                                "value": "2021-11-30",
+                                "valueCompare": "2022-11-02",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1492,8 +1492,8 @@
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2021-11-29",
-                "valueCompare": "2022-11-03",
+                "value": "2021-11-30",
+                "valueCompare": "2022-11-02",
                 "childs": []
             }
         },
@@ -1642,7 +1642,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 207,
+        "size": 86,
         "count": 25,
         "paginate": true,
         "countValues": [
