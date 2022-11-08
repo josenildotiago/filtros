@@ -2,8 +2,8 @@
     "actions": null,
     "detailsRows": null,
     "title": "<span>Receita</span>",
-    "subtitle": "<span>Categoria econômica</span>",
-    "idTable": "compublicaportalreceitadetalhadacategoriaeconomicaavancadoPortalReceitaDetalhadaAvancadoCategoriaEconomicaTableService",
+    "subtitle": "<span>Fonte de Recurso</span>",
+    "idTable": "compublicaportalreceitadetalhadafonterecursoavancadoPortalReceitaDetalhadaAvancadoFonteRecursoTableService",
     "actionHeadClasses": "null hidden-xs hidden-sm",
     "forceShowActions": true,
     "treeTable": false,
@@ -18,38 +18,6 @@
     "selectedLineEnabled": false,
     "idHeadParentAsLong": null,
     "header": null,
-    "pagination": {
-        "page": 1,
-        "size": 10,
-        "count": 25,
-        "paginate": true,
-        "countValues": [
-            {
-                "value": 25,
-                "desc": "25",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            },
-            {
-                "value": 50,
-                "desc": "50",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            },
-            {
-                "value": 100,
-                "desc": "100",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            },
-            {
-                "value": 300,
-                "desc": "300",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            }
-        ]
-    },
     "searchBean": {
         "searchPlaceholder": null,
         "searchAdvanced": [
@@ -75,7 +43,7 @@
                         "classEnum": null,
                         "params": {
                             "disableSearch": true,
-                            "defaultValue": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
+                            "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Fonte de Recurso\",\"url\":\"{alias}/receita/avancado/fonteRecurso\",\"selected\":true}",
                             "values": [
                                 {
                                     "value": {
@@ -83,7 +51,7 @@
                                         "version": null,
                                         "nome": "Natureza da receita",
                                         "url": "{alias}/receita/avancado/categoria",
-                                        "selected": true
+                                        "selected": false
                                     },
                                     "desc": "Natureza da receita",
                                     "valueClass": "com.publica.portal.web.PortalTableOption",
@@ -95,7 +63,7 @@
                                         "version": null,
                                         "nome": "Fonte de Recurso",
                                         "url": "{alias}/receita/avancado/fonteRecurso",
-                                        "selected": false
+                                        "selected": true
                                     },
                                     "desc": "Fonte de Recurso",
                                     "valueClass": "com.publica.portal.web.PortalTableOption",
@@ -105,14 +73,14 @@
                             "hideCondition": true,
                             "changeAction": "reload"
                         },
-                        "defaultValue": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
+                        "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Fonte de Recurso\",\"url\":\"{alias}/receita/avancado/fonteRecurso\",\"selected\":true}",
                         "defaultValueKey": null,
                         "defaultValueCompare": null,
                         "value": {
-                            "id": 1,
+                            "id": 2,
                             "version": null,
-                            "nome": "Natureza da receita",
-                            "url": "{alias}/receita/avancado/categoria",
+                            "nome": "Fonte de Recurso",
+                            "url": "{alias}/receita/avancado/fonteRecurso",
                             "selected": true
                         }
                     }
@@ -433,7 +401,18 @@
                         },
                         "defaultValue": null,
                         "defaultValueKey": null,
-                        "defaultValueCompare": null
+                        "defaultValueCompare": null,
+                        "value": {
+                            "id": 1,
+                            "version": null,
+                            "codigo": 20,
+                            "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                            "inscricaoEstadual": null,
+                            "telefone": null,
+                            "email": null,
+                            "homePage": null,
+                            "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                        }
                     },
                     {
                         "searchType": "ADVANCED",
@@ -452,7 +431,7 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "defaultValueCompare": "2022-11-07",
+                            "defaultValueCompare": "2022-11-08",
                             "nestedName": "group_by_movimentos",
                             "defaultValue": "2022-01-01",
                             "hideCondition": true,
@@ -460,9 +439,32 @@
                         },
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
-                        "defaultValueCompare": "2022-11-07",
-                        "value": "2022-01-01",
-                        "valueCompare": "2022-11-07"
+                        "defaultValueCompare": "2022-11-08",
+                        "value": "2022-01-31",
+                        "valueCompare": "2022-11-02"
+                    },
+                    {
+                        "searchType": "ADVANCED",
+                        "searchRestrictionType": "TEXT",
+                        "property": "listMovimentos.listFonteRecurso.fonteRecurso.denominacao",
+                        "label": "Palavra-chave",
+                        "placeholder": "",
+                        "searchDefault": true,
+                        "allowAddChildren": true,
+                        "condition": {
+                            "value": "CONTEM",
+                            "desc": "Contém",
+                            "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                            "params": {},
+                            "icon": "epublica-icon-th"
+                        },
+                        "classEnum": null,
+                        "params": {
+                            "hideCondition": true
+                        },
+                        "defaultValue": null,
+                        "defaultValueKey": null,
+                        "defaultValueCompare": null
                     }
                 ]
             }
@@ -475,12 +477,13 @@
                     "components": [
                         {
                             "search": {
-                                "alias": null,
-                                "label": "Totalizar por",
-                                "property": "",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "ENUM_POJO",
+                                "property": "",
+                                "label": "Totalizar por",
+                                "placeholder": "Selecione o Totalizador",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -488,9 +491,10 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
+                                "classEnum": null,
                                 "params": {
                                     "disableSearch": true,
-                                    "defaultValue": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
+                                    "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Fonte de Recurso\",\"url\":\"{alias}/receita/avancado/fonteRecurso\",\"selected\":true}",
                                     "values": [
                                         {
                                             "value": {
@@ -498,7 +502,7 @@
                                                 "version": null,
                                                 "nome": "Natureza da receita",
                                                 "url": "{alias}/receita/avancado/categoria",
-                                                "selected": true
+                                                "selected": false
                                             },
                                             "desc": "Natureza da receita",
                                             "valueClass": "com.publica.portal.web.PortalTableOption",
@@ -510,7 +514,7 @@
                                                 "version": null,
                                                 "nome": "Fonte de Recurso",
                                                 "url": "{alias}/receita/avancado/fonteRecurso",
-                                                "selected": false
+                                                "selected": true
                                             },
                                             "desc": "Fonte de Recurso",
                                             "valueClass": "com.publica.portal.web.PortalTableOption",
@@ -520,15 +524,16 @@
                                     "hideCondition": true,
                                     "changeAction": "reload"
                                 },
+                                "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Fonte de Recurso\",\"url\":\"{alias}/receita/avancado/fonteRecurso\",\"selected\":true}",
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 1,
+                                    "id": 2,
                                     "version": null,
-                                    "nome": "Natureza da receita",
-                                    "url": "{alias}/receita/avancado/categoria",
+                                    "nome": "Fonte de Recurso",
+                                    "url": "{alias}/receita/avancado/fonteRecurso",
                                     "selected": true
-                                },
-                                "valueCompare": null,
-                                "searchDefault": true
+                                }
                             },
                             "childs": []
                         }
@@ -540,7 +545,6 @@
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "Totalizar por",
-                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -550,7 +554,7 @@
                 },
                 "params": {
                     "disableSearch": true,
-                    "defaultValue": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
+                    "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Fonte de Recurso\",\"url\":\"{alias}/receita/avancado/fonteRecurso\",\"selected\":true}",
                     "values": [
                         {
                             "value": {
@@ -558,7 +562,7 @@
                                 "version": null,
                                 "nome": "Natureza da receita",
                                 "url": "{alias}/receita/avancado/categoria",
-                                "selected": true
+                                "selected": false
                             },
                             "desc": "Natureza da receita",
                             "valueClass": "com.publica.portal.web.PortalTableOption",
@@ -570,7 +574,7 @@
                                 "version": null,
                                 "nome": "Fonte de Recurso",
                                 "url": "{alias}/receita/avancado/fonteRecurso",
-                                "selected": false
+                                "selected": true
                             },
                             "desc": "Fonte de Recurso",
                             "valueClass": "com.publica.portal.web.PortalTableOption",
@@ -580,8 +584,7 @@
                     "hideCondition": true,
                     "changeAction": "reload"
                 },
-                "value": "{\"id\":1,\"version\":null,\"nome\":\"Natureza da receita\",\"url\":\"{alias}/receita/avancado/categoria\",\"selected\":true}",
-                "valueCompare": null,
+                "value": "{\"id\":2,\"version\":null,\"nome\":\"Fonte de Recurso\",\"url\":\"{alias}/receita/avancado/fonteRecurso\",\"selected\":true}",
                 "childs": []
             },
             "Filtrar porunidadeGestora": {
@@ -591,12 +594,13 @@
                     "components": [
                         {
                             "search": {
-                                "alias": null,
-                                "label": "<span>Unidade gestora</span>",
-                                "property": "unidadeGestora",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "ENUM_POJO",
+                                "property": "unidadeGestora",
+                                "label": "<span>Unidade gestora</span>",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -604,6 +608,7 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
+                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -897,30 +902,32 @@
                                     ],
                                     "hideCondition": true
                                 },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 3,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                                },
-                                "valueCompare": null,
-                                "searchDefault": true
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                }
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "alias": null,
-                                "label": "Período",
-                                "property": "listMovimentos.dataMovimento",
-                                "searchRestrictionType": "PERIODO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "PERIODO",
+                                "property": "listMovimentos.dataMovimento",
+                                "label": "Período",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -928,16 +935,45 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
+                                "classEnum": null,
                                 "params": {
-                                    "defaultValueCompare": "2022-11-07",
+                                    "defaultValueCompare": "2022-11-08",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-29",
-                                "valueCompare": "2022-11-02",
-                                "searchDefault": true
+                                "defaultValue": "2022-01-01",
+                                "defaultValueKey": null,
+                                "defaultValueCompare": "2022-11-08",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-02"
+                            },
+                            "childs": []
+                        },
+                        {
+                            "search": {
+                                "searchType": "ADVANCED",
+                                "searchRestrictionType": "TEXT",
+                                "property": "listMovimentos.listFonteRecurso.fonteRecurso.denominacao",
+                                "label": "Palavra-chave",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
+                                "condition": {
+                                    "value": "CONTEM",
+                                    "desc": "Contém",
+                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                                    "params": {},
+                                    "icon": "epublica-icon-th"
+                                },
+                                "classEnum": null,
+                                "params": {
+                                    "hideCondition": true
+                                },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null
                             },
                             "childs": []
                         }
@@ -949,7 +985,6 @@
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "<span>Unidade gestora</span>",
-                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -1250,8 +1285,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
-                "valueCompare": null,
+                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
                 "childs": []
             },
             "Filtrar porlistMovimentos.dataMovimento": {
@@ -1261,12 +1295,13 @@
                     "components": [
                         {
                             "search": {
-                                "alias": null,
-                                "label": "<span>Unidade gestora</span>",
-                                "property": "unidadeGestora",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "ENUM_POJO",
+                                "property": "unidadeGestora",
+                                "label": "<span>Unidade gestora</span>",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -1274,6 +1309,7 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
+                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -1567,30 +1603,32 @@
                                     ],
                                     "hideCondition": true
                                 },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 3,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                                },
-                                "valueCompare": null,
-                                "searchDefault": true
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                }
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "alias": null,
-                                "label": "Período",
-                                "property": "listMovimentos.dataMovimento",
-                                "searchRestrictionType": "PERIODO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "PERIODO",
+                                "property": "listMovimentos.dataMovimento",
+                                "label": "Período",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -1598,16 +1636,45 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
+                                "classEnum": null,
                                 "params": {
-                                    "defaultValueCompare": "2022-11-07",
+                                    "defaultValueCompare": "2022-11-08",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-29",
-                                "valueCompare": "2022-11-02",
-                                "searchDefault": true
+                                "defaultValue": "2022-01-01",
+                                "defaultValueKey": null,
+                                "defaultValueCompare": "2022-11-08",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-02"
+                            },
+                            "childs": []
+                        },
+                        {
+                            "search": {
+                                "searchType": "ADVANCED",
+                                "searchRestrictionType": "TEXT",
+                                "property": "listMovimentos.listFonteRecurso.fonteRecurso.denominacao",
+                                "label": "Palavra-chave",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
+                                "condition": {
+                                    "value": "CONTEM",
+                                    "desc": "Contém",
+                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                                    "params": {},
+                                    "icon": "epublica-icon-th"
+                                },
+                                "classEnum": null,
+                                "params": {
+                                    "hideCondition": true
+                                },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null
                             },
                             "childs": []
                         }
@@ -1619,7 +1686,6 @@
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
                 "label": "Período",
-                "alias": null,
                 "condition": {
                     "value": "ENTRE",
                     "desc": "Entre",
@@ -1628,13 +1694,13 @@
                     "icon": "epublica-icon-exchange-alt"
                 },
                 "params": {
-                    "defaultValueCompare": "2022-11-07",
+                    "defaultValueCompare": "2022-11-08",
                     "nestedName": "group_by_movimentos",
                     "defaultValue": "2022-01-01",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2022-01-29",
+                "value": "2022-01-31",
                 "valueCompare": "2022-11-02",
                 "childs": []
             }
@@ -1781,6 +1847,38 @@
             }
         ],
         "advancedSearch": true
+    },
+    "pagination": {
+        "page": 1,
+        "size": 57,
+        "count": 25,
+        "paginate": true,
+        "countValues": [
+            {
+                "value": 25,
+                "desc": "25",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 50,
+                "desc": "50",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 100,
+                "desc": "100",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 300,
+                "desc": "300",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            }
+        ]
     },
     "rows": null,
     "detailProperty": null
