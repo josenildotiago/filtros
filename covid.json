@@ -1,9 +1,9 @@
 {
     "actions": null,
     "detailsRows": null,
-    "title": "<span>Receita</span>",
-    "subtitle": "<span>Convênios recebidos</span>",
-    "idTable": "compublicaportalconveniorecebidoPortalConvenioRecebidoTableService",
+    "title": "<span>COVID-19 - Receitas</span>",
+    "subtitle": null,
+    "idTable": "compublicaportalreceitasearchPortalSearchReceitaTableService",
     "actionHeadClasses": null,
     "forceShowActions": true,
     "treeTable": false,
@@ -16,7 +16,7 @@
     "multiSelectedEnabled": false,
     "selectAllPages": false,
     "selectedLineEnabled": false,
-    "idHeadParentAsLong": null,
+    "idHeadParentAsLong": 5,
     "header": null,
     "searchBean": {
         "searchPlaceholder": null,
@@ -28,7 +28,7 @@
                     {
                         "searchType": "ADVANCED",
                         "searchRestrictionType": "ENUM_POJO",
-                        "property": "listUnidadesGestoras.unidadeGestora",
+                        "property": "unidadeGestora",
                         "label": "<span>Unidade gestora</span>",
                         "placeholder": "",
                         "searchDefault": true,
@@ -42,7 +42,6 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "nestedName": "groupByUnidadeGestora",
                             "values": [
                                 {
                                     "value": {
@@ -342,7 +341,7 @@
                     {
                         "searchType": "ADVANCED",
                         "searchRestrictionType": "PERIODO",
-                        "property": "convenio.assinatura",
+                        "property": "dataMovimento",
                         "label": "Período",
                         "placeholder": "",
                         "searchDefault": true,
@@ -357,44 +356,22 @@
                         "classEnum": null,
                         "params": {
                             "defaultValueCompare": "2022-11-08",
-                            "defaultValue": "2021-11-08",
+                            "nestedName": "listMovimentos",
+                            "defaultValue": "2022-01-01",
                             "hideCondition": true,
                             "filterCurrentYear": false
                         },
-                        "defaultValue": "2021-11-08",
+                        "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
                         "defaultValueCompare": "2022-11-08",
-                        "value": "2021-11-08",
+                        "value": "2022-01-01",
                         "valueCompare": "2022-11-08"
-                    },
-                    {
-                        "searchType": "ADVANCED",
-                        "searchRestrictionType": "MULTI_FIELD",
-                        "property": "convenio.numero",
-                        "label": "Palavra-chave",
-                        "placeholder": "",
-                        "searchDefault": true,
-                        "allowAddChildren": true,
-                        "condition": {
-                            "value": "CONTEM",
-                            "desc": "Contém",
-                            "valueClass": "com.publica.base.web.components.search.SearchCondition",
-                            "params": {},
-                            "icon": "epublica-icon-th"
-                        },
-                        "classEnum": null,
-                        "params": {
-                            "hideCondition": true
-                        },
-                        "defaultValue": null,
-                        "defaultValueKey": null,
-                        "defaultValueCompare": null
                     }
                 ]
             }
         ],
         "searchProperties": {
-            "Filtrar porlistUnidadesGestoras.unidadeGestora": {
+            "Filtrar porunidadeGestora": {
                 "separator": {
                     "name": "Filtrar por",
                     "hide": true,
@@ -403,7 +380,7 @@
                             "search": {
                                 "alias": null,
                                 "label": "<span>Unidade gestora</span>",
-                                "property": "listUnidadesGestoras.unidadeGestora",
+                                "property": "unidadeGestora",
                                 "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
                                 "searchType": "ADVANCED",
@@ -415,7 +392,6 @@
                                     "icon": "epublica-icon-equals"
                                 },
                                 "params": {
-                                    "nestedName": "groupByUnidadeGestora",
                                     "values": [
                                         {
                                             "value": {
@@ -709,15 +685,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 1,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 20,
-                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -728,7 +704,7 @@
                             "search": {
                                 "alias": null,
                                 "label": "Período",
-                                "property": "convenio.assinatura",
+                                "property": "dataMovimento",
                                 "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
                                 "searchType": "ADVANCED",
@@ -741,46 +717,21 @@
                                 },
                                 "params": {
                                     "defaultValueCompare": "2022-11-08",
-                                    "defaultValue": "2021-11-08",
+                                    "nestedName": "listMovimentos",
+                                    "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2021-11-30",
-                                "valueCompare": "2022-11-02",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-01",
                                 "searchDefault": true
-                            },
-                            "childs": []
-                        },
-                        {
-                            "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "MULTI_FIELD",
-                                "property": "convenio.numero",
-                                "label": "Palavra-chave",
-                                "placeholder": "",
-                                "searchDefault": true,
-                                "allowAddChildren": true,
-                                "condition": {
-                                    "value": "CONTEM",
-                                    "desc": "Contém",
-                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
-                                    "params": {},
-                                    "icon": "epublica-icon-th"
-                                },
-                                "classEnum": null,
-                                "params": {
-                                    "hideCondition": true
-                                },
-                                "defaultValue": null,
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null
                             },
                             "childs": []
                         }
                     ]
                 },
-                "property": "listUnidadesGestoras.unidadeGestora",
-                "key": "listUnidadesGestoras.unidadeGestora",
+                "property": "unidadeGestora",
+                "key": "unidadeGestora",
                 "searchType": "ADVANCED",
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
@@ -794,7 +745,6 @@
                     "icon": "epublica-icon-equals"
                 },
                 "params": {
-                    "nestedName": "groupByUnidadeGestora",
                     "values": [
                         {
                             "value": {
@@ -1087,11 +1037,11 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
+                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
                 "valueCompare": null,
                 "childs": []
             },
-            "Filtrar porconvenio.assinatura": {
+            "Filtrar pordataMovimento": {
                 "separator": {
                     "name": "Filtrar por",
                     "hide": true,
@@ -1100,7 +1050,7 @@
                             "search": {
                                 "alias": null,
                                 "label": "<span>Unidade gestora</span>",
-                                "property": "listUnidadesGestoras.unidadeGestora",
+                                "property": "unidadeGestora",
                                 "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
                                 "searchType": "ADVANCED",
@@ -1112,7 +1062,6 @@
                                     "icon": "epublica-icon-equals"
                                 },
                                 "params": {
-                                    "nestedName": "groupByUnidadeGestora",
                                     "values": [
                                         {
                                             "value": {
@@ -1406,15 +1355,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 1,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 20,
-                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1425,7 +1374,7 @@
                             "search": {
                                 "alias": null,
                                 "label": "Período",
-                                "property": "convenio.assinatura",
+                                "property": "dataMovimento",
                                 "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
                                 "searchType": "ADVANCED",
@@ -1438,46 +1387,21 @@
                                 },
                                 "params": {
                                     "defaultValueCompare": "2022-11-08",
-                                    "defaultValue": "2021-11-08",
+                                    "nestedName": "listMovimentos",
+                                    "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2021-11-30",
-                                "valueCompare": "2022-11-02",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-01",
                                 "searchDefault": true
-                            },
-                            "childs": []
-                        },
-                        {
-                            "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "MULTI_FIELD",
-                                "property": "convenio.numero",
-                                "label": "Palavra-chave",
-                                "placeholder": "",
-                                "searchDefault": true,
-                                "allowAddChildren": true,
-                                "condition": {
-                                    "value": "CONTEM",
-                                    "desc": "Contém",
-                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
-                                    "params": {},
-                                    "icon": "epublica-icon-th"
-                                },
-                                "classEnum": null,
-                                "params": {
-                                    "hideCondition": true
-                                },
-                                "defaultValue": null,
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null
                             },
                             "childs": []
                         }
                     ]
                 },
-                "property": "convenio.assinatura",
-                "key": "convenio.assinatura",
+                "property": "dataMovimento",
+                "key": "dataMovimento",
                 "searchType": "ADVANCED",
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
@@ -1492,13 +1416,22 @@
                 },
                 "params": {
                     "defaultValueCompare": "2022-11-08",
-                    "defaultValue": "2021-11-08",
+                    "nestedName": "listMovimentos",
+                    "defaultValue": "2022-01-01",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2021-11-30",
-                "valueCompare": "2022-11-02",
+                "value": "2022-01-31",
+                "valueCompare": "2022-11-01",
                 "childs": []
+            },
+            "parent": {
+                "property": "PHNwYW4+Q09WSUQtMTkgLSBSZWNlaXRhczwvc3Bhbj4=",
+                "searchRestrictionType": "LONG",
+                "condition": {
+                    "value": "IGUAL"
+                },
+                "value": "5"
             }
         },
         "searchOrders": null,
