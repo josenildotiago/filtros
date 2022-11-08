@@ -18,38 +18,6 @@
     "selectedLineEnabled": false,
     "idHeadParentAsLong": null,
     "header": null,
-    "pagination": {
-        "page": 1,
-        "size": 11,
-        "count": 25,
-        "paginate": true,
-        "countValues": [
-            {
-                "value": 25,
-                "desc": "25",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            },
-            {
-                "value": 50,
-                "desc": "50",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            },
-            {
-                "value": 100,
-                "desc": "100",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            },
-            {
-                "value": 300,
-                "desc": "300",
-                "valueClass": "java.lang.Integer",
-                "params": {}
-            }
-        ]
-    },
     "searchBean": {
         "searchPlaceholder": null,
         "searchAdvanced": [
@@ -778,7 +746,7 @@
                                     "filterCurrentYear": false
                                 },
                                 "value": "2022-01-31",
-                                "valueCompare": "2022-11-03",
+                                "valueCompare": "2022-11-01",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1474,7 +1442,7 @@
                                     "filterCurrentYear": false
                                 },
                                 "value": "2022-01-31",
-                                "valueCompare": "2022-11-03",
+                                "valueCompare": "2022-11-01",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1529,7 +1497,7 @@
                     "filterCurrentYear": false
                 },
                 "value": "2022-01-31",
-                "valueCompare": "2022-11-03",
+                "valueCompare": "2022-11-01",
                 "childs": []
             }
         },
@@ -1675,6 +1643,38 @@
             }
         ],
         "advancedSearch": true
+    },
+    "pagination": {
+        "page": 1,
+        "size": 11,
+        "count": 25,
+        "paginate": true,
+        "countValues": [
+            {
+                "value": 25,
+                "desc": "25",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 50,
+                "desc": "50",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 100,
+                "desc": "100",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 300,
+                "desc": "300",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            }
+        ]
     },
     "rows": null,
     "detailProperty": null
