@@ -1,9 +1,9 @@
 {
     "actions": null,
     "detailsRows": null,
-    "title": "<span>COVID-19 - Receitas</span>",
-    "subtitle": null,
-    "idTable": "compublicaportalreceitasearchPortalSearchReceitaTableService",
+    "title": "<span>Despesa</span>",
+    "subtitle": "Gastos por favorecido",
+    "idTable": "compublicaportaldespesagastosfavorecidoavancadoPortalDespesaGastosFavorecidoAvancadoTableService",
     "actionHeadClasses": null,
     "forceShowActions": true,
     "treeTable": false,
@@ -16,7 +16,7 @@
     "multiSelectedEnabled": false,
     "selectAllPages": false,
     "selectedLineEnabled": false,
-    "idHeadParentAsLong": 5,
+    "idHeadParentAsLong": null,
     "header": null,
     "searchBean": {
         "searchPlaceholder": null,
@@ -28,7 +28,7 @@
                     {
                         "searchType": "ADVANCED",
                         "searchRestrictionType": "ENUM_POJO",
-                        "property": "unidadeGestora",
+                        "property": "unidadeOrcamentaria.unidadeGestora",
                         "label": "<span>Unidade gestora</span>",
                         "placeholder": "",
                         "searchDefault": true,
@@ -336,12 +336,23 @@
                         },
                         "defaultValue": null,
                         "defaultValueKey": null,
-                        "defaultValueCompare": null
+                        "defaultValueCompare": null,
+                        "value": {
+                            "id": 3,
+                            "version": null,
+                            "codigo": 10,
+                            "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                            "inscricaoEstadual": null,
+                            "telefone": null,
+                            "email": null,
+                            "homePage": null,
+                            "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
+                        }
                     },
                     {
                         "searchType": "ADVANCED",
                         "searchRestrictionType": "PERIODO",
-                        "property": "dataMovimento",
+                        "property": "empenho.emissao",
                         "label": "Período",
                         "placeholder": "",
                         "searchDefault": true,
@@ -355,35 +366,58 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "defaultValueCompare": "'.$dataAtual.'",
-                            "nestedName": "listMovimentos",
-                            "defaultValue": "2022-01-01",
+                            "defaultValueCompare": "2022-11-08",
+                            "defaultValue": "2021-11-08",
                             "hideCondition": true,
                             "filterCurrentYear": false
                         },
-                        "defaultValue": "2022-01-01",
+                        "defaultValue": "2021-11-08",
                         "defaultValueKey": null,
-                        "defaultValueCompare": "'.$dataAtual.'",
-                        "value": "2022-01-01",
-                        "valueCompare": "'.$dataAtual.'"
+                        "defaultValueCompare": "2022-11-08",
+                        "value": "2021-11-30",
+                        "valueCompare": "2022-11-01"
+                    },
+                    {
+                        "searchType": "ADVANCED",
+                        "searchRestrictionType": "MULTI_FIELD",
+                        "property": "fornecedor.pessoa.nome",
+                        "label": "Palavra-chave",
+                        "placeholder": "",
+                        "searchDefault": true,
+                        "allowAddChildren": true,
+                        "condition": {
+                            "value": "CONTEM",
+                            "desc": "Contém",
+                            "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                            "params": {},
+                            "icon": "epublica-icon-th"
+                        },
+                        "classEnum": null,
+                        "params": {
+                            "hideCondition": true
+                        },
+                        "defaultValue": null,
+                        "defaultValueKey": null,
+                        "defaultValueCompare": null
                     }
                 ]
             }
         ],
         "searchProperties": {
-            "Filtrar porunidadeGestora": {
+            "Filtrar porunidadeOrcamentaria.unidadeGestora": {
                 "separator": {
                     "name": "Filtrar por",
                     "hide": true,
                     "components": [
                         {
                             "search": {
-                                "alias": null,
-                                "label": "<span>Unidade gestora</span>",
-                                "property": "unidadeGestora",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "ENUM_POJO",
+                                "property": "unidadeOrcamentaria.unidadeGestora",
+                                "label": "<span>Unidade gestora</span>",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -391,6 +425,7 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
+                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -684,30 +719,32 @@
                                     ],
                                     "hideCondition": true
                                 },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": '.$id.',
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": '.$codigo.',
-                                    "denominacao": "'.$denominacao.'",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para '.$denominacao.'"
-                                },
-                                "valueCompare": null,
-                                "searchDefault": true
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
+                                }
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "alias": null,
-                                "label": "Período",
-                                "property": "dataMovimento",
-                                "searchRestrictionType": "PERIODO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "PERIODO",
+                                "property": "empenho.emissao",
+                                "label": "Período",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -715,28 +752,55 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
+                                "classEnum": null,
                                 "params": {
-                                    "defaultValueCompare": "'.$dataAtual.'",
-                                    "nestedName": "listMovimentos",
-                                    "defaultValue": "2022-01-01",
+                                    "defaultValueCompare": "2022-11-08",
+                                    "defaultValue": "2021-11-08",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "'.$dataInicial.'",
-                                "valueCompare": "'.$dataFinal.'",
-                                "searchDefault": true
+                                "defaultValue": "2021-11-08",
+                                "defaultValueKey": null,
+                                "defaultValueCompare": "2022-11-08",
+                                "value": "2021-11-30",
+                                "valueCompare": "2022-11-01"
+                            },
+                            "childs": []
+                        },
+                        {
+                            "search": {
+                                "searchType": "ADVANCED",
+                                "searchRestrictionType": "MULTI_FIELD",
+                                "property": "fornecedor.pessoa.nome",
+                                "label": "Palavra-chave",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
+                                "condition": {
+                                    "value": "CONTEM",
+                                    "desc": "Contém",
+                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                                    "params": {},
+                                    "icon": "epublica-icon-th"
+                                },
+                                "classEnum": null,
+                                "params": {
+                                    "hideCondition": true
+                                },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null
                             },
                             "childs": []
                         }
                     ]
                 },
-                "property": "unidadeGestora",
-                "key": "unidadeGestora",
+                "property": "unidadeOrcamentaria.unidadeGestora",
+                "key": "unidadeOrcamentaria.unidadeGestora",
                 "searchType": "ADVANCED",
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "<span>Unidade gestora</span>",
-                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -1037,23 +1101,23 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":'.$id.',\"version\":null,\"codigo\":'.$codigo.',\"denominacao\":\"'.$denominacao.'\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para '.$denominacao.'\"}",
-                "valueCompare": null,
+                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
                 "childs": []
             },
-            "Filtrar pordataMovimento": {
+            "Filtrar porempenho.emissao": {
                 "separator": {
                     "name": "Filtrar por",
                     "hide": true,
                     "components": [
                         {
                             "search": {
-                                "alias": null,
-                                "label": "<span>Unidade gestora</span>",
-                                "property": "unidadeGestora",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "ENUM_POJO",
+                                "property": "unidadeOrcamentaria.unidadeGestora",
+                                "label": "<span>Unidade gestora</span>",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -1061,6 +1125,7 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
+                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -1354,30 +1419,32 @@
                                     ],
                                     "hideCondition": true
                                 },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": '.$id.',
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": '.$codigo.',
-                                    "denominacao": "'.$denominacao.'",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para '.$denominacao.'"
-                                },
-                                "valueCompare": null,
-                                "searchDefault": true
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
+                                }
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "alias": null,
-                                "label": "Período",
-                                "property": "dataMovimento",
-                                "searchRestrictionType": "PERIODO",
-                                "allowAddChildren": true,
                                 "searchType": "ADVANCED",
+                                "searchRestrictionType": "PERIODO",
+                                "property": "empenho.emissao",
+                                "label": "Período",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -1385,28 +1452,55 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
+                                "classEnum": null,
                                 "params": {
-                                    "defaultValueCompare": "'.$dataAtual.'",
-                                    "nestedName": "listMovimentos",
-                                    "defaultValue": "2022-01-01",
+                                    "defaultValueCompare": "2022-11-08",
+                                    "defaultValue": "2021-11-08",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "'.$dataInicial.'",
-                                "valueCompare": "'.$dataFinal.'",
-                                "searchDefault": true
+                                "defaultValue": "2021-11-08",
+                                "defaultValueKey": null,
+                                "defaultValueCompare": "2022-11-08",
+                                "value": "2021-11-30",
+                                "valueCompare": "2022-11-01"
+                            },
+                            "childs": []
+                        },
+                        {
+                            "search": {
+                                "searchType": "ADVANCED",
+                                "searchRestrictionType": "MULTI_FIELD",
+                                "property": "fornecedor.pessoa.nome",
+                                "label": "Palavra-chave",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
+                                "condition": {
+                                    "value": "CONTEM",
+                                    "desc": "Contém",
+                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                                    "params": {},
+                                    "icon": "epublica-icon-th"
+                                },
+                                "classEnum": null,
+                                "params": {
+                                    "hideCondition": true
+                                },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null
                             },
                             "childs": []
                         }
                     ]
                 },
-                "property": "dataMovimento",
-                "key": "dataMovimento",
+                "property": "empenho.emissao",
+                "key": "empenho.emissao",
                 "searchType": "ADVANCED",
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
                 "label": "Período",
-                "alias": null,
                 "condition": {
                     "value": "ENTRE",
                     "desc": "Entre",
@@ -1415,23 +1509,14 @@
                     "icon": "epublica-icon-exchange-alt"
                 },
                 "params": {
-                    "defaultValueCompare": "'.$dataAtual.'",
-                    "nestedName": "listMovimentos",
-                    "defaultValue": "2022-01-01",
+                    "defaultValueCompare": "2022-11-08",
+                    "defaultValue": "2021-11-08",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "'.$dataInicial.'",
-                "valueCompare": "'.$dataFinal.'",
+                "value": "2021-11-30",
+                "valueCompare": "2022-11-01",
                 "childs": []
-            },
-            "parent": {
-                "property": "PHNwYW4+Q09WSUQtMTkgLSBSZWNlaXRhczwvc3Bhbj4=",
-                "searchRestrictionType": "LONG",
-                "condition": {
-                    "value": "IGUAL"
-                },
-                "value": "5"
             }
         },
         "searchOrders": null,
@@ -1579,7 +1664,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 0,
+        "size": 924,
         "count": 25,
         "paginate": true,
         "countValues": [
