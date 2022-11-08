@@ -387,7 +387,7 @@
                         },
                         "classEnum": null,
                         "params": {
-                            "defaultValueCompare": "'.$dataAtual.'",
+                            "defaultValueCompare": "2022-11-08",
                             "nestedName": "group_by_movimentos",
                             "defaultValue": "2022-01-01",
                             "hideCondition": true,
@@ -395,9 +395,9 @@
                         },
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
-                        "defaultValueCompare": "'.$dataAtual.'",
+                        "defaultValueCompare": "2022-11-08",
                         "value": "2022-01-01",
-                        "valueCompare": "'.$dataAtual.'"
+                        "valueCompare": "2022-11-08"
                     },
                     {
                         "searchType": "ADVANCED",
@@ -740,15 +740,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": '.$id.',
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": '.$codigo.',
-                                    "denominacao": "'.$denominacao.'",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para '.$denominacao.'"
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -771,14 +771,14 @@
                                     "icon": "epublica-icon-exchange-alt"
                                 },
                                 "params": {
-                                    "defaultValueCompare": "'.$dataAtual.'",
+                                    "defaultValueCompare": "2022-11-08",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "'.$dataInicial.'",
-                                "valueCompare": "'.$dataFinal.'",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-03",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1118,7 +1118,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":'.$id.',\"version\":null,\"codigo\":'.$codigo.',\"denominacao\":\"'.$denominacao.'\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para '.$denominacao.'\"}",
+                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
                 "valueCompare": null,
                 "childs": []
             },
@@ -1436,15 +1436,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": '.$id.',
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": '.$codigo.',
-                                    "denominacao": "'.$denominacao.'",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para '.$denominacao.'"
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1467,14 +1467,14 @@
                                     "icon": "epublica-icon-exchange-alt"
                                 },
                                 "params": {
-                                    "defaultValueCompare": "'.$dataAtual.'",
+                                    "defaultValueCompare": "2022-11-08",
                                     "nestedName": "group_by_movimentos",
                                     "defaultValue": "2022-01-01",
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "'.$dataInicial.'",
-                                "valueCompare": "'.$dataFinal.'",
+                                "value": "2022-01-31",
+                                "valueCompare": "2022-11-03",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1522,14 +1522,14 @@
                     "icon": "epublica-icon-exchange-alt"
                 },
                 "params": {
-                    "defaultValueCompare": "'.$dataAtual.'",
+                    "defaultValueCompare": "2022-11-08",
                     "nestedName": "group_by_movimentos",
                     "defaultValue": "2022-01-01",
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "'.$dataInicial.'",
-                "valueCompare": "'.$dataFinal.'",
+                "value": "2022-01-31",
+                "valueCompare": "2022-11-03",
                 "childs": []
             }
         },
