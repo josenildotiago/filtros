@@ -1,0 +1,352 @@
+{
+    "actions": null,
+    "detailsRows": null,
+    "title": "<span>Despesa</span>",
+    "subtitle": "<span>Transferências financeiras concedidas</span>",
+    "idTable": "compublicaportaldespesatransferenciaconcedidaPortalDespesaTransferenciaConcedidaTableService",
+    "actionHeadClasses": null,
+    "forceShowActions": true,
+    "treeTable": false,
+    "expandTable": false,
+    "paramTable": false,
+    "showConfig": false,
+    "showConfigActions": false,
+    "showCountPagesAction": true,
+    "subheader": null,
+    "multiSelectedEnabled": false,
+    "selectAllPages": false,
+    "selectedLineEnabled": false,
+    "idHeadParentAsLong": null,
+    "header": null,
+    "searchBean": {
+        "searchPlaceholder": null,
+        "searchAdvanced": [
+            {
+                "name": "Filtrar por",
+                "hide": true,
+                "components": [
+                    {
+                        "searchType": "ADVANCED",
+                        "searchRestrictionType": "ENUM_POJO",
+                        "property": "listMovimentos.unidadeGestora",
+                        "label": "<span>Unidade gestora</span> recebedora",
+                        "placeholder": "",
+                        "searchDefault": true,
+                        "allowAddChildren": true,
+                        "condition": {
+                            "value": "IGUAL",
+                            "desc": "Igual",
+                            "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                            "params": {},
+                            "icon": "epublica-icon-equals"
+                        },
+                        "classEnum": null,
+                        "params": {
+                            "nestedName": "group_by_movimentos",
+                            "values": [],
+                            "hideCondition": true
+                        },
+                        "defaultValue": null,
+                        "defaultValueKey": null,
+                        "defaultValueCompare": null
+                    },
+                    {
+                        "searchType": "ADVANCED",
+                        "searchRestrictionType": "PERIODO",
+                        "property": "listMovimentos.dataMovimento",
+                        "label": "Período",
+                        "placeholder": "",
+                        "searchDefault": true,
+                        "allowAddChildren": true,
+                        "condition": {
+                            "value": "ENTRE",
+                            "desc": "Entre",
+                            "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                            "params": {},
+                            "icon": "epublica-icon-exchange-alt"
+                        },
+                        "classEnum": null,
+                        "params": {
+                            "defaultValueCompare": "2022-11-08",
+                            "nestedName": "group_by_movimentos",
+                            "defaultValue": "2022-01-01",
+                            "hideCondition": true,
+                            "filterCurrentYear": false
+                        },
+                        "defaultValue": "2022-01-01",
+                        "defaultValueKey": null,
+                        "defaultValueCompare": "2022-11-08",
+                        "value": "2022-01-01",
+                        "valueCompare": "2022-11-08"
+                    }
+                ]
+            }
+        ],
+        "searchProperties": {
+            "Filtrar porlistMovimentos.dataMovimento": {
+                "separator": {
+                    "name": "Filtrar por",
+                    "hide": true,
+                    "components": [
+                        {
+                            "search": {
+                                "searchType": "ADVANCED",
+                                "searchRestrictionType": "ENUM_POJO",
+                                "property": "listMovimentos.unidadeGestora",
+                                "label": "<span>Unidade gestora</span> recebedora",
+                                "placeholder": "",
+                                "searchDefault": true,
+                                "allowAddChildren": true,
+                                "condition": {
+                                    "value": "IGUAL",
+                                    "desc": "Igual",
+                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                                    "params": {},
+                                    "icon": "epublica-icon-equals"
+                                },
+                                "classEnum": null,
+                                "params": {
+                                    "nestedName": "group_by_movimentos",
+                                    "values": [],
+                                    "hideCondition": true
+                                },
+                                "defaultValue": null,
+                                "defaultValueKey": null,
+                                "defaultValueCompare": null
+                            },
+                            "childs": []
+                        },
+                        {
+                            "search": {
+                                "alias": null,
+                                "label": "Período",
+                                "property": "listMovimentos.dataMovimento",
+                                "searchRestrictionType": "PERIODO",
+                                "allowAddChildren": true,
+                                "searchType": "ADVANCED",
+                                "condition": {
+                                    "value": "ENTRE",
+                                    "desc": "Entre",
+                                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                                    "params": {},
+                                    "icon": "epublica-icon-exchange-alt"
+                                },
+                                "params": {
+                                    "defaultValueCompare": "2022-11-08",
+                                    "nestedName": "group_by_movimentos",
+                                    "defaultValue": "2022-01-01",
+                                    "hideCondition": true,
+                                    "filterCurrentYear": false
+                                },
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-11-02",
+                                "searchDefault": true
+                            },
+                            "childs": []
+                        }
+                    ]
+                },
+                "property": "listMovimentos.dataMovimento",
+                "key": "listMovimentos.dataMovimento",
+                "searchType": "ADVANCED",
+                "searchRestrictionType": "PERIODO",
+                "allowAddChildren": true,
+                "label": "Período",
+                "alias": null,
+                "condition": {
+                    "value": "ENTRE",
+                    "desc": "Entre",
+                    "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                    "params": {},
+                    "icon": "epublica-icon-exchange-alt"
+                },
+                "params": {
+                    "defaultValueCompare": "2022-11-08",
+                    "nestedName": "group_by_movimentos",
+                    "defaultValue": "2022-01-01",
+                    "hideCondition": true,
+                    "filterCurrentYear": false
+                },
+                "value": "2022-01-30",
+                "valueCompare": "2022-11-02",
+                "childs": []
+            }
+        },
+        "searchOrders": null,
+        "searchLoaded": false,
+        "operators": [
+            {
+                "value": "OU",
+                "desc": "Ou",
+                "valueClass": "com.publica.base.web.components.search.SearchOperator",
+                "params": {}
+            },
+            {
+                "value": "E",
+                "desc": "E",
+                "valueClass": "com.publica.base.web.components.search.SearchOperator",
+                "params": {}
+            }
+        ],
+        "conditions": [
+            {
+                "value": "CONTEM",
+                "desc": "Contém",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "TEXT",
+                        "MULTI_FIELD"
+                    ]
+                },
+                "icon": "epublica-icon-th"
+            },
+            {
+                "value": "IGUAL",
+                "desc": "Igual",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "TEXT",
+                        "DATE",
+                        "DATE_TIME",
+                        "ENUM",
+                        "SELECT",
+                        "MULTI_SELECT",
+                        "LONG",
+                        "ENUM_POJO",
+                        "MULTI_ENUM",
+                        "DECIMAL",
+                        "INTEGER",
+                        "MASKED",
+                        "MONTH_YEAR"
+                    ]
+                },
+                "icon": "epublica-icon-equals"
+            },
+            {
+                "value": "DIFERENTE",
+                "desc": "Diferente",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "TEXT",
+                        "DATE",
+                        "DATE_TIME",
+                        "ENUM",
+                        "SELECT",
+                        "MULTI_SELECT",
+                        "LONG",
+                        "ENUM_POJO",
+                        "MULTI_ENUM",
+                        "INTEGER",
+                        "MASKED",
+                        "MONTH_YEAR"
+                    ]
+                },
+                "icon": "epublica-icon-not-equal"
+            },
+            {
+                "value": "COMECA_COM",
+                "desc": "Começa com",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "TEXT"
+                    ]
+                },
+                "icon": "epublica-icon-sort-alpha-up"
+            },
+            {
+                "value": "TEMINA_COM",
+                "desc": "Termina com",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "TEXT"
+                    ]
+                },
+                "icon": "epublica-icon-sort-alpha-down"
+            },
+            {
+                "value": "MAIOR_QUE",
+                "desc": "Maior que",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "LONG",
+                        "DATE",
+                        "DATE_TIME",
+                        "INTEGER",
+                        "MONTH_YEAR"
+                    ]
+                },
+                "icon": "epublica-icon-chevron-right"
+            },
+            {
+                "value": "MENOR_QUE",
+                "desc": "Menor que",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "LONG",
+                        "DATE",
+                        "DATE_TIME",
+                        "INTEGER",
+                        "MONTH_YEAR"
+                    ]
+                },
+                "icon": "epublica-icon-chevron-left"
+            },
+            {
+                "value": "ENTRE",
+                "desc": "Entre",
+                "valueClass": "com.publica.base.web.components.search.SearchCondition",
+                "params": {
+                    "types": [
+                        "PERIODO",
+                        "PERIODO_DATE_TIME",
+                        "DECIMAL_ENTRE",
+                        "POJO_ENTRE"
+                    ]
+                },
+                "icon": "epublica-icon-exchange-alt"
+            }
+        ],
+        "advancedSearch": true
+    },
+    "pagination": {
+        "page": 1,
+        "size": 33,
+        "count": 25,
+        "paginate": true,
+        "countValues": [
+            {
+                "value": 25,
+                "desc": "25",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 50,
+                "desc": "50",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 100,
+                "desc": "100",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            },
+            {
+                "value": 300,
+                "desc": "300",
+                "valueClass": "java.lang.Integer",
+                "params": {}
+            }
+        ]
+    },
+    "rows": null,
+    "detailProperty": null
+}
