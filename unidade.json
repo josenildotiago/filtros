@@ -461,18 +461,7 @@
                         },
                         "defaultValue": null,
                         "defaultValueKey": null,
-                        "defaultValueCompare": null,
-                        "value": {
-                            "id": 3,
-                            "version": null,
-                            "codigo": 10,
-                            "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
-                            "inscricaoEstadual": null,
-                            "telefone": null,
-                            "email": null,
-                            "homePage": null,
-                            "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                        }
+                        "defaultValueCompare": null
                     },
                     {
                         "searchType": "ADVANCED",
@@ -500,8 +489,8 @@
                         "defaultValue": "2022-01-01",
                         "defaultValueKey": null,
                         "defaultValueCompare": "2022-11-09",
-                        "value": "2022-01-31",
-                        "valueCompare": "2022-11-01"
+                        "value": "2022-01-01",
+                        "valueCompare": "2022-11-09"
                     },
                     {
                         "searchType": "ADVANCED",
@@ -537,13 +526,12 @@
                     "components": [
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "property": "",
+                                "alias": null,
                                 "label": "Totalizar por",
-                                "placeholder": "Selecione o Totalizador",
-                                "searchDefault": true,
+                                "property": "",
+                                "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -551,7 +539,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "disableSearch": true,
                                     "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Unidade orçamentária\",\"url\":\"{alias}/despesa/avancado/unidadeOrcamentaria\",\"selected\":true}",
@@ -644,16 +631,15 @@
                                     "hideCondition": true,
                                     "changeAction": "reload"
                                 },
-                                "defaultValue": "{\"id\":2,\"version\":null,\"nome\":\"Unidade orçamentária\",\"url\":\"{alias}/despesa/avancado/unidadeOrcamentaria\",\"selected\":true}",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null,
                                 "value": {
                                     "id": 2,
                                     "version": null,
                                     "nome": "Unidade orçamentária",
                                     "url": "{alias}/despesa/avancado/unidadeOrcamentaria",
                                     "selected": true
-                                }
+                                },
+                                "valueCompare": null,
+                                "searchDefault": true
                             },
                             "childs": []
                         }
@@ -665,6 +651,7 @@
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "Totalizar por",
+                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -765,6 +752,7 @@
                     "changeAction": "reload"
                 },
                 "value": "{\"id\":2,\"version\":null,\"nome\":\"Unidade orçamentária\",\"url\":\"{alias}/despesa/avancado/unidadeOrcamentaria\",\"selected\":true}",
+                "valueCompare": null,
                 "childs": []
             },
             "Filtrar porunidadeOrcamentaria.unidadeGestora": {
@@ -774,13 +762,12 @@
                     "components": [
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "property": "unidadeOrcamentaria.unidadeGestora",
+                                "alias": null,
                                 "label": "<span>Unidade gestora</span>",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "unidadeOrcamentaria.unidadeGestora",
+                                "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -788,7 +775,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -1082,32 +1068,30 @@
                                     ],
                                     "hideCondition": true
                                 },
-                                "defaultValue": null,
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 3,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                                }
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                },
+                                "valueCompare": null,
+                                "searchDefault": true
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "PERIODO",
-                                "property": "listMovimentos.dataMovimento",
+                                "alias": null,
                                 "label": "Período",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "listMovimentos.dataMovimento",
+                                "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -1115,7 +1099,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "defaultValueCompare": "2022-11-09",
                                     "nestedName": "group_by_movimentos",
@@ -1123,11 +1106,9 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "defaultValue": "2022-01-01",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": "2022-11-09",
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-11-01"
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-11-02",
+                                "searchDefault": true
                             },
                             "childs": []
                         },
@@ -1165,6 +1146,7 @@
                 "searchRestrictionType": "ENUM_POJO",
                 "allowAddChildren": true,
                 "label": "<span>Unidade gestora</span>",
+                "alias": null,
                 "condition": {
                     "value": "IGUAL",
                     "desc": "Igual",
@@ -1465,7 +1447,8 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
+                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
+                "valueCompare": null,
                 "childs": []
             },
             "Filtrar porlistMovimentos.dataMovimento": {
@@ -1475,13 +1458,12 @@
                     "components": [
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "ENUM_POJO",
-                                "property": "unidadeOrcamentaria.unidadeGestora",
+                                "alias": null,
                                 "label": "<span>Unidade gestora</span>",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "unidadeOrcamentaria.unidadeGestora",
+                                "searchRestrictionType": "ENUM_POJO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "IGUAL",
                                     "desc": "Igual",
@@ -1489,7 +1471,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-equals"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "values": [
                                         {
@@ -1783,32 +1764,30 @@
                                     ],
                                     "hideCondition": true
                                 },
-                                "defaultValue": null,
-                                "defaultValueKey": null,
-                                "defaultValueCompare": null,
                                 "value": {
-                                    "id": 3,
+                                    "id": 1,
                                     "version": null,
-                                    "codigo": 10,
-                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
+                                    "codigo": 20,
+                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
-                                }
+                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                },
+                                "valueCompare": null,
+                                "searchDefault": true
                             },
                             "childs": []
                         },
                         {
                             "search": {
-                                "searchType": "ADVANCED",
-                                "searchRestrictionType": "PERIODO",
-                                "property": "listMovimentos.dataMovimento",
+                                "alias": null,
                                 "label": "Período",
-                                "placeholder": "",
-                                "searchDefault": true,
+                                "property": "listMovimentos.dataMovimento",
+                                "searchRestrictionType": "PERIODO",
                                 "allowAddChildren": true,
+                                "searchType": "ADVANCED",
                                 "condition": {
                                     "value": "ENTRE",
                                     "desc": "Entre",
@@ -1816,7 +1795,6 @@
                                     "params": {},
                                     "icon": "epublica-icon-exchange-alt"
                                 },
-                                "classEnum": null,
                                 "params": {
                                     "defaultValueCompare": "2022-11-09",
                                     "nestedName": "group_by_movimentos",
@@ -1824,11 +1802,9 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "defaultValue": "2022-01-01",
-                                "defaultValueKey": null,
-                                "defaultValueCompare": "2022-11-09",
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-11-01"
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-11-02",
+                                "searchDefault": true
                             },
                             "childs": []
                         },
@@ -1866,6 +1842,7 @@
                 "searchRestrictionType": "PERIODO",
                 "allowAddChildren": true,
                 "label": "Período",
+                "alias": null,
                 "condition": {
                     "value": "ENTRE",
                     "desc": "Entre",
@@ -1880,8 +1857,8 @@
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2022-01-31",
-                "valueCompare": "2022-11-01",
+                "value": "2022-01-30",
+                "valueCompare": "2022-11-02",
                 "childs": []
             }
         },
@@ -2030,7 +2007,7 @@
     },
     "pagination": {
         "page": 1,
-        "size": 45,
+        "size": 4,
         "count": 25,
         "paginate": true,
         "countValues": [

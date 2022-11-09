@@ -1,0 +1,14 @@
+"value": {
+    "id": '.$id.',
+    "version": null,
+    "codigo": '.$codigo.',
+    "denominacao": "'.$denominacao.'",
+    "inscricaoEstadual": null,
+    "telefone": null,
+    "email": null,
+    "homePage": null,
+    "denominacaoPara": "para '.$denominacao.'"
+}
+
+"value": "'.$dataInicial.'",
+"valueCompare": "'.$dataFinal.'"
