@@ -1101,15 +1101,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 1,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 20,
-                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1138,8 +1138,8 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-11-01",
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-11-02",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1479,7 +1479,7 @@
                     ],
                     "hideCondition": true
                 },
-                "value": "{\"id\":1,\"version\":null,\"codigo\":20,\"denominacao\":\"PREFEITURA MUNICIPAL DE MOSSORÓ\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para PREFEITURA MUNICIPAL DE MOSSORÓ\"}",
+                "value": "{\"id\":3,\"version\":null,\"codigo\":10,\"denominacao\":\"FUNDO MUNICIPAL DE SAÚDE\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para FUNDO MUNICIPAL DE SAÚDE\"}",
                 "valueCompare": null,
                 "childs": []
             },
@@ -1797,15 +1797,15 @@
                                     "hideCondition": true
                                 },
                                 "value": {
-                                    "id": 1,
+                                    "id": 3,
                                     "version": null,
-                                    "codigo": 20,
-                                    "denominacao": "PREFEITURA MUNICIPAL DE MOSSORÓ",
+                                    "codigo": 10,
+                                    "denominacao": "FUNDO MUNICIPAL DE SAÚDE",
                                     "inscricaoEstadual": null,
                                     "telefone": null,
                                     "email": null,
                                     "homePage": null,
-                                    "denominacaoPara": "para PREFEITURA MUNICIPAL DE MOSSORÓ"
+                                    "denominacaoPara": "para FUNDO MUNICIPAL DE SAÚDE"
                                 },
                                 "valueCompare": null,
                                 "searchDefault": true
@@ -1834,8 +1834,8 @@
                                     "hideCondition": true,
                                     "filterCurrentYear": false
                                 },
-                                "value": "2022-01-31",
-                                "valueCompare": "2022-11-01",
+                                "value": "2022-01-30",
+                                "valueCompare": "2022-11-02",
                                 "searchDefault": true
                             },
                             "childs": []
@@ -1889,8 +1889,8 @@
                     "hideCondition": true,
                     "filterCurrentYear": false
                 },
-                "value": "2022-01-31",
-                "valueCompare": "2022-11-01",
+                "value": "2022-01-30",
+                "valueCompare": "2022-11-02",
                 "childs": []
             }
         },
