@@ -12,3 +12,5 @@
 
 "value": "'.$dataInicial.'",
 "valueCompare": "'.$dataFinal.'"
+
+"value": "{\"id\":'.$id.',\"version\":null,\"'.$codigo.'\":20,\"denominacao\":\"'.$denominacao.'\",\"inscricaoEstadual\":null,\"telefone\":null,\"email\":null,\"homePage\":null,\"denominacaoPara\":\"para '.$denominacao.'\"}"
